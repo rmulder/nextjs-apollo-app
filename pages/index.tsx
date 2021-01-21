@@ -2,7 +2,8 @@ import fetch from "isomorphic-unfetch";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient, { gql } from "apollo-boost";
 
-import { BookInfo, AuthorInfo } from "../components";
+import BookInfo from "../components/BookInfo";
+import AuthorInfo from "../components/AuthorInfo";
 
 const Home = () => {
   const client = new ApolloClient({
